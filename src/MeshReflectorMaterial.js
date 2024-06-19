@@ -82,7 +82,6 @@ export default class MeshReflectorMaterial extends MeshStandardMaterial {
     fbo1.depthBuffer = true
     fbo1.depthTexture = new DepthTexture(resolution, resolution)
     fbo1.depthTexture.format = DepthFormat
-    fbo1.depthTexture.type = UnsignedShortType
 
     const fbo2 = new WebGLRenderTarget(resolution, resolution, parameters)
 
